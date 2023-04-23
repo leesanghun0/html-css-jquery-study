@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>와이어프레임</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1000px;
+            background-color: beige;
+        }
+        .header {
+            width: 1000px;
+            height: 100px;
+            background-color: olive;
+            position: relative;
+        }
+        .logo {
+            width: 200px;
+            height: 100px;
+            float: left;
+            text-align: center;
+            line-height: 100px;
+            background-color: slateblue;
+        }
+        .menu {
+            width: 800px;
+            height: 100px;
+            float: left;
+            background-color: lightskyblue;
+        }
+        .menuList {
+            width: 600px;
+            background-color: cornflowerblue;
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .menuList li {
+            width: 150px;
+            list-style: none;
+            float: left;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .slide {
+            width: 1000px;
+            height: 250px;
+            background: url(images/banner.jpg);
+            background-size: cover;
+            text-indent: -999px;
+        }
+        .contents {
+            width: 1000px;
+            height: 200px;
+            background-color: powderblue;
+        }
+        .contentBox {
+            width: 33.3333%;
+            height: 200px;
+            color: white;
+            float: left;
+            text-align: center;
+            line-height: 200px;
+        }
+        .notice {
+            
+        }
+        .gallery {
+            background-color: royalblue
+        }
+        .footer {
+            width: 1000px;
+            height: 100px;
+            background-color: darkgray; 
+        }
+        .footerBox {
+            float: left;
+            color: white;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .fLogo {
+            width: 200px;
+            background-color: mediumslateblue;
+        }
+        .copyright {
+            width: 600px;
+            background-color: lightsteelblue;
+        }
+        .site {
+            width: 200px;
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="logo">
+                <h1 class="logoTitle">LOGO</h1>
+            </div>
+            <div class="menu">
+                <ul class="menuList">
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide">
+           imageSlide
+        </div>
+        <div class="contents">
+            <div class="contentBox notice">notice</div>
+            <div class="contentBox gallery">gallery</div>
+            <div class="contentBox banner">banner</div>
+        </div>
+        <div class="footer">
+            <div class="footerBox fLogo">
+                logo
+            </div>
+            <div class="footerBox copyright">
+                copyright
+            </div>
+            <div class="footerBox site">
+                site
+            </div>
+        </div>
+    </div>
+</body>
+</html>

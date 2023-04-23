@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hamburger Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        body {
+            background-color: orange;
+        }
+
+        .boxWrap {
+            width: 1240px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            background-color: #fff;
+            float: left;
+            margin-right: 20px;
+            position: relative
+        }
+
+        .box:last-child {
+            margin-right: 0;
+        }
+
+        .contents {
+            position: absolute;
+            top: -100px
+        }
+
+        .textBox {
+            background-color: orangered;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .textBox h1 {
+            font-size: 20px;
+            color: #fff;
+            padding: 20px 0 10px 10px;
+        }
+
+        .textBox p {
+            color: #fff;
+            padding: 0 10px 30px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul class="boxWrap">
+            <li class="box">
+                <div class="contents">
+                    <img src="images/hamburger.png" alt="hamburger">
+                    <div class="textBox">
+                        <h1>Hamburger</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem, quo. Blanditiis labore reiciendis distinctio, quod et dignissimos dolores deserunt temporibus nostrum illum mollitia autem eum animi doloribus minima tempore!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="box">
+                <div class="contents">
+                    <img src="images/hamburger.png" alt="hamburger">
+                    <div class="textBox">
+                        <h1>Hamburger</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem, quo. Blanditiis labore reiciendis distinctio, quod et dignissimos dolores deserunt temporibus nostrum illum mollitia autem eum animi doloribus minima tempore!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="box">
+                <div class="contents">
+                    <img src="images/hamburger.png" alt="hamburger">
+                    <div class="textBox">
+                        <h1>Hamburger</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem, quo. Blanditiis labore reiciendis distinctio, quod et dignissimos dolores deserunt temporibus nostrum illum mollitia autem eum animi doloribus minima tempore!</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body></html>

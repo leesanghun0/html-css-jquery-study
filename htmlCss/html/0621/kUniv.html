@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>한국대학교 총동문회</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        #wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 200px;
+        }
+
+        header .logo {
+            width: 350px;
+            height: 200px;
+            float: left;
+        }
+
+        nav {
+            width: 650px;
+            height: 200px;
+            float: left;
+        }
+
+        .menuList {
+            width: 650px;
+            height: 200px;
+        }
+
+        .menuList>li {
+            width: calc(650px/3);
+            height: 200px;
+            float: left;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        .menuList>li>a {
+            display: block;
+        }
+        .mainMenu {
+            position: relative;
+        }
+        
+        .subMenu {
+            width: calc(650px/3);
+            position: absolute;
+            height: 150px;
+            top: 200px;
+            left: 0;
+            color: #fff;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        .subMenu>li {
+            width: calc(650px/3);
+            height: 50px;
+            float: left;
+            line-height: 50px;
+        }
+
+        .slide {
+            height: 350px;
+            background-color: skyblue;
+            position: relative;
+        }
+
+        .slideText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .slideText:before {
+            content: "환영합니다!\A한국대학교 동문여러분";
+            white-space: pre;
+            width: 300px;
+            padding: 30px 0;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .contents {
+            height: 500px;
+        }
+
+        .noticeWrap {
+            height: 300px;
+        }
+
+        .con {
+            margin-right: 2%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .con:last-child {
+            margin-right: 0;
+        }
+
+        .notice {
+            width: 49%;
+            height: 300px;
+            float: left;
+        }
+
+        .n_title {
+            color: lightseagreen;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        .n_title:after {
+            content: "";
+            height: 2px;
+            width: 100%;
+            ;
+            background-color: lightseagreen;
+            position: absolute;
+            top: 35px;
+            left: 0px;
+        }
+
+        .noticeList {
+            margin: 10px 10px;
+            position: relative;
+        }
+
+        .noticeList li {
+            color: #444;
+            font-size: 14px;
+            line-height: 2.8;
+        }
+
+        .noticeList li span {
+            position: absolute;
+            right: 10px;
+        }
+
+        .banner {
+            width: 49%;
+            height: 300px;
+            float: left;
+            position: relative;
+        }
+
+        .bannerImg {
+            width: 100%;
+            height: 250px;
+            margin: 10px 0;
+            background-color: pink;
+            position: relative;
+        }
+
+        .bannerImg img {
+            position: absolute;
+        }
+
+        .bannerImg:after {
+            content: "- 센서 알고리즘 개발\A- 인공지능 로봇연구\A- 전자보안제품 생산";
+            white-space: pre;
+            width: 200px;
+            height: 100px;
+            display: block;
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+            color: #fff;
+            background-color: transparent;
+            line-height: 1.6;
+        }
+
+        .bannerImg .b-img01 {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .bannerImg .b-img02 {
+            top: 10px;
+            left: 10px;
+            width: 250px;
+        }
+
+        .iconsWrap {
+            width: 80%;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .iconsList {
+            width: 100%;
+            height: 100%;
+        }
+
+        .iconsList li {
+            float: left;
+            width: 33.3333%;
+            text-align: center;
+        }
+
+        .iconsList li img {
+            height: 200px;
+        }
+
+        footer {
+            height: 200px;
+            background-color: gray;
+        }
+
+        .fnb {
+            width: 50%;
+            height: 70px;
+            margin: 0 auto;
+        }
+
+        .fnb li {
+            float: left;
+            width: 33.3333%;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            color: #fff;
+        }
+
+        .fnb li a {
+            display: block;
+            height: 100%;
+        }
+
+        footer p {
+            margin-top: 10px;
+            text-align: center;
+            color: #fff;
+            line-height: 1.6;
+        }
+    </style>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/kUniv.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <a href="#">
+                <h1>
+                    <img src="images/logo.png" class="logo" alt="logo">
+                </h1>
+            </a>
+            <nav class="menu">
+                <ul class="menuList">
+                    <li class="mainMenu menu01">
+                        <a href="#">대학원 소개</a>
+                        <ul class="subMenu">
+                            <li><a href="#">sub menu</a></li>
+                            <li><a href="#">sub menu</a></li>
+                            <li><a href="#">sub menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainMenu menu02">
+                        <a href="#">동문회 소개</a>
+                        <ul class="subMenu">
+                            <li><a href="#">sub menu</a></li>
+                            <li><a href="#">sub menu</a></li>
+                            <li><a href="#">sub menu</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainMenu menu03">
+                        <a href="#">커뮤니티 소개</a>
+                        <ul class="subMenu">
+                            <li><a href="#">sub menu</a></li>
+                            <li><a href="#">sub menu</a></li>
+                            <li><a href="#">sub menu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="slide">
+            <div class="slideText"></div>
+        </section>
+        <section class="contents">
+            <div class="noticeWrap">
+                <div class="con notice">
+                    <h2 class="n_title">공지사항</h2>
+                    <ul class="noticeList">
+                        <li><a href="#">제17회 한국대학교 동문회장배 자선골프대회 안내문...</a><span>2016-09-12</span></li>
+                        <li><a href="#">개교 100주년 기념 야외 오페라 '토스카' 축제 초청...</a><span>2016-09-10</span></li>
+                        <li><a href="#">동문회장 및 운영위원장 후보자 추천 및 신청받습니...</a><span>2016-09-09</span></li>
+                        <li><a href="#">홈커밍데이 진행위원회(정회원) 선발 결과를 알려드...</a><span>2016-09-07</span></li>
+                        <li><a href="#">2016년도 제3차 이사회 및 장학위원회 개최일 변경...</a><span>2016-09-05</span></li>
+                    </ul>
+                </div>
+                <div class="con banner">
+                    <h2 class="n_title">공지사항</h2>
+                    <div class="bannerImg">
+                        <img src="images/popup01.jpg" alt="" class="b-img01">
+                        <img src="images/popup02.png" alt="" class="b-img02">
+                    </div>
+                </div>
+            </div>
+            <div class="iconsWrap">
+                <ul class="iconsList">
+                    <li><a href="#">
+                            <img src="/images/icon01.png" alt="">
+                        </a></li>
+                    <li><a href="#"><img src="/images/icon02.png" alt=""></a></li>
+                    <li><a href="#"><img src="/images/icon03.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <ul class="fnb">
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Nostrum, minus facilis cum rem nesciunt quos qui, <br>illum iste ratione vero laboriosam officiis officia amet excepturi! Facere animi porro expedita earum!</p>
+        </footer>
+    </div>
+</body></html>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+img {
+    vertical-align: top;
+}
+
+#key {
+    width: 1000px;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.key_list {
+    width: 1000px;
+    height: 350px;
+    position: absolute; /*slide2.js*/
+}
+.key_list li img {
+    width: 100%;
+}
+.key_title {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    border-radius: 20px;
+}

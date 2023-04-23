@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            color: white;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+    <button class="bt">click</button>
+    
+    <script>
+        $(".bt").click(function(){
+            $(".box").animate({
+                left: '+=20'
+            });
+        });
+    </script>
+</body>
+</html>

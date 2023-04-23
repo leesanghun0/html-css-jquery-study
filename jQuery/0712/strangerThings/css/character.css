@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: top;
+}
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 500vw 500vh;
+    font-family: 'Roboto Slab', arial;
+}
+.prev {
+    margin: 20px;
+    position: absolute;
+}
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: transparent;
+    color: #fff;;
+}
+.logo {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+.character_list .ch {
+    position: relative;
+}
+.character_list .ch h2 {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: right;
+    color: #fff;
+    background-color: #000;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    
+}
+.character_list .ch h2:hover {
+    cursor: pointer;
+    background-color: firebrick;
+}
+.character_list .ch h2.open {
+    background-position: left bottom;
+    background-color: firebrick;
+    color: #fff;
+}
+
+.character_list .ch.ch1 h2.open {
+    color: #fff;
+}
+.character_list .ch p {
+    padding: 20px 20px 20px 110px;
+    text-align: right;
+    line-height: 1.5rem;
+    font-size: 15px;
+    display: none;
+}
+.character_list .ch img {
+    position: absolute;
+    bottom: 0;
+    left: -110px;
+    display: none;
+}

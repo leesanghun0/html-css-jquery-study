@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>quick</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        #quick {
+            width: 100px;
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #quick a {
+            display: block;
+            width: 200%;
+            height: 40px;
+            line-height: 40px;
+            padding: 20px;
+            color: #fff;
+        }
+        #quick a.q1 {
+            background-color: #333;
+        }
+        #quick a.q2 {
+            background-color: #444;
+        }
+        #quick a.q3 {
+            background-color: #555;
+        }
+        #quick a.q4 {
+            background-color: #666;
+        }
+        #quick .naver {
+            background-color: yellowgreen;
+        }
+        #quick a.q1:hover {
+            background-color: mediumpurple;
+        }
+        #quick a.q2:hover {
+            background-color: deepskyblue;
+        }
+        #quick a.q3:hover {
+            background-color: palevioletred;
+        }
+        #quick a.q4:hover {
+            background-color: plum;
+        }
+        #quick .naver:hover {
+            background-color: green;
+        }
+        
+        #quick a:hover {
+            margin-left: -100%;
+            transition-duration: 1.2s;
+        }
+        section {
+            min-height: 1150px;
+        }
+        
+        #section1 {
+            background-color: plum;
+        }
+        #section2 {
+            background-color: mediumpurple;
+        }
+        #section3 {
+            background-color: mediumslateblue;
+        }
+        #section4 {
+            background-color: darkmagenta;
+        }
+        
+        section h2 {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            position: relative
+        }
+/*
+        section h2:after {
+            content: "|";
+            color: #333;
+            margin-left: 10px;
+        }
+*/
+        
+        section h2:before {
+            content: "";
+/*            display: block;*/
+            width: 100px;
+            height: 5px;
+            color: black;
+            background-color: brown;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            color: #333;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="quick">
+        <nav>
+            <a href="#section1" class="q1">1페이지</a>
+            <a href="#section2" class="q2">2페이지</a>
+            <a href="#section3" class="q3">3페이지</a>
+            <a href="#section4" class="q4">4페이지</a>
+            <a href="http://www.naver.com" class="naver">NAVER</a>
+        </nav>
+    </div>
+    <section id="section1">
+        <h2>1페이지</h2>
+    </section>
+    <section id="section2">
+        <h2>2페이지</h2>
+    </section>
+    <section id="section3">
+        <h2>3페이지</h2>
+    </section>
+    <section id="section4">
+        <h2>4페이지</h2>
+    </section> 
+</body>
+</html>

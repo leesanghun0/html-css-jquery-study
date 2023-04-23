@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    border: none;
+}
+body {
+    background-color: bisque;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.home {
+    display: block;
+    margin: 20px;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+}
+.home img {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+.logo {
+    width: 150px;
+}
+.wrapper {
+    width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    padding: 20px;
+}
+.selected {
+    background-color:burlywood;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.hamburger_list li{
+    width: 200px;
+    height: 200px;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+.hamburger_list li img {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -25%);
+    
+}
+.hamburger_list li img.big {
+    width: 200px;
+}
+
+.hamburger_list li.a01 {
+    background-color: orange;
+}
+.hamburger_list li.a02 {
+    background-color: olivedrab;
+}
+.hamburger_list li.a03 {
+    background-color: orange;
+}
+.hamburger_list li.a04 {
+    background-color: olivedrab;
+}
+.hamburger_list li.a05 {
+    background-color: olivedrab;
+}
+.hamburger_list li.a06 {
+    background-color: orange;
+}
+.hamburger_list li.a07 {
+    background-color: olivedrab;
+}
+.hamburger_list li.a08 {
+    background-color: orange;
+}
+h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    font-size: 14px;
+    transform: translateX(-50%);
+    text-align: center;
+}

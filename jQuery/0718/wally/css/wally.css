@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/bg.png);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.logo{
+    width: 180px;
+    height: 180px;
+    background-image: url(../images/logo.png);
+    margin: 40px;
+}
+
+.wally{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 280px;
+    transform: translateX(-50%);
+}
+
+.wally .face{
+    width: 100px;
+    height: 130px;
+    background-image: url(../images/face.png);
+    background-repeat: no-repeat;
+    position: relative;
+    left: 130px;
+    top: 80px;
+    z-index: -1;
+}
+
+.wally .face.cry{
+    background-position: right;
+}
+
+.wally .body{
+    width: 280px;
+    height: 320px;
+    background-image: url(../images/body.png);
+}
+
+.wally .leg{
+    width: 280px;
+    height: 185px;
+    background-image: url(../images/leg.png);
+    background-position: bottom;
+}
+
+.control{
+    overflow: auto;
+    width: 180px;
+    height: 180px;
+    margin: 40px;
+    border-radius: 100%;
+    background-color: #d6423e;
+    position: relative;
+}
+
+.control a{
+    display: block;
+    width: 180px;
+    height: 25px;
+    margin: 20px 0;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+.control a:hover{
+    opacity: 1;
+}
+
+.control a.arr-bottom{
+    background-position: bottom center;
+    position: absolute;
+    bottom: 0;
+}
+
+.control .height{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #d4433b;
+    font-size: 25pt;
+    text-align: center;
+    font-family: 'georgia';
+    
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+body {
+    background-image: url(../images/bg.png);
+    background-attachment: fixed;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 100px auto;
+    overflow: hidden;
+    background-color: #151515;
+    padding: 20px;
+}
+
+.cover {
+    background-color: #f5dd87;
+    float: left;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animal_list {
+    float: right;
+    width: 400px;
+}
+
+.animal_list li {
+    width: 200px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.animal_list li img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.animal_list li img.big {
+    width: 150px;
+    height: 150px;
+}
+
+.animal_list li.a01 {
+    background-color: #fed75f;
+}
+.animal_list li.a02 {
+    background-color: #fffbd9;
+}
+.animal_list li.a03 {
+    background-color: #94d2c5;
+}
+.animal_list li.a04 {
+    background-color: #a3d8b2;
+}
+.animal_list li.a05 {
+    background-color: #ffeed8;
+}
+.animal_list li.a06 {
+    background-color: #77ada2;
+}

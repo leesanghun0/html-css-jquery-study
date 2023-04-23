@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+.row {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.label {
+    width: 45px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+}
+
+/*header*/
+header {
+    height: 50px;
+    background-color: #fff;
+}
+
+.logoBox {
+    width: 30%;
+    float: left;
+    background-color: dodgerblue;
+}
+
+.logoBox a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logoBox h1 {
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: normal;
+    float: right;
+    padding: 0 20px;
+}
+
+.logoBox span {
+    font-weight: bold;
+}
+
+.menuList {
+    float: right;
+    width: 60%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuList li {
+    float: left;
+    width: 65px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: dodgerblue;
+    box-sizing: content-box;
+}
+
+.menuList li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.menuList li:hover {
+    border-bottom: 2px solid dodgerblue;
+    box-sizing: border-box;
+}
+
+/*slide*/
+.slide {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.slideBox01 .label {
+    background-color: royalblue;
+    padding: 0 5px;
+    bottom: 20px;
+    left: 10%;
+}
+
+.slide a {
+    display: block;
+}
+
+.slideImg01 {
+    width: 100%;
+    height: 500px;
+    background-image: url(images/bg01.png);
+    background-size: 100% 500px;
+    text-indent: -9999px;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(images/profile.png);
+    background-position: -82px -35px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: -9999px;
+}
+
+.slideText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+}
+
+.arrow {
+    width: 25px;
+    height: 30px;
+    background-image: url(images/arrows.png);
+    background-size: 45px 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrowRight {
+    right: 0;
+    background-position: right;
+}
+
+/*contents*/
+.contents {
+    margin-bottom: 25px;
+}
+
+.contents .date {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.contents .date a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.photosList {
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.photosList li {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.photosList li:last-child {
+    margin-right: 0;
+}
+
+.photosList li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.photosList li p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.photoLink {
+    display: block;
+    position: relative;
+}
+
+.photosList .photo01 .label {
+    background-color: red;
+    bottom: 15px;
+}
+
+.photosList .photo02 .label {
+    background-color: #333;
+    bottom: 15px;
+}
+
+.contents .bannerBox {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.bannerBox .banner {
+    height: 100%;
+    background-image: url(images/bg04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-indent: -9999px;
+}
+
+.bannerBox .bannerText {
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.bannerBox .label {
+    background-color: red;
+    position: absolute;
+    bottom: 15px;
+}
+
+.photoBox {
+    margin-top: 25px;
+}
+
+.photoBox img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    object-fit: cover;
+}
+
+.photoBox p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.photoWrap {
+    overflow: hidden;
+}
+
+.photoWrap li {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+
+.photoWrap li:last-child {
+    margin-right: 0;
+}
+
+.photoWrap > li > a {
+    display: block;
+}
+
+.photoWrap .photo03 a,
+.photoWrap .photo04 a,
+.photoWrap .photo05 a {
+    position: relative;
+}
+
+.photo03 .label {
+    background-color: yellowgreen;
+}
+
+.photo04 .label {
+    background-color: royalblue;
+    padding: 0 5px;
+}
+
+.photo05 .label {
+    background-color: #333;
+}
+
+.photoListTop .label,
+.photoListMiddle .label {
+    position: absolute;
+    bottom: 15px;
+}
+
+.photoListMiddle {
+    margin-top: 25px;
+}
+
+.photoWrap .photo06 a,
+.photoWrap .photo07 a,
+.photoWrap .photo08 a {
+    position: relative;
+}
+
+.photo06 .label,
+.photo07 .label {
+    background-color: red;
+}
+
+.photo08 .label {
+    background-color: purple;
+    padding: 0 5px;
+}
+
+/*bottom*/
+.photoListBottm {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.photoListBottm li {
+    width: 48%;
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.photoListBottm li:last-child {
+    margin-right: 0;
+}
+
+.photoListBottm li img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.photoListBottm .label {
+    position: absolute;
+    bottom: 15px;
+}
+
+.photoListBottm .photo09 .label {
+    background-color: red;
+}
+
+.photoListBottm .photo10 .label {
+    background-color: #333;
+}
+
+/*news letter*/
+.newsLetter {
+    height: 200px;
+    background-color: dodgerblue;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+.newsLetter h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+.newsLetter p {
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.newsLetter .form {
+    text-align: center;
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    position: relative;
+}
+.newsLetter input[type=text]{
+    width: 250px;
+    height: 25px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+}
+.newsLetter input[type=submit] {
+    position: absolute;
+    right: 0px;
+    border: 0;
+    border-radius: 10px;
+    width: 60px;
+    height: 25px;
+    background-color: #fff;
+    color: dodgerblue;
+    font-size: 10px;
+    cursor: pointer;
+}
+.footer {
+    height: 100px;
+    background-color: #fff;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.footer p {
+    text-align: center;
+    color: #aaa;
+}

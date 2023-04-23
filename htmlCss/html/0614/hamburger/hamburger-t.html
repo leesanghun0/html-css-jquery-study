@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hamburger-t</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: orange;
+        }
+        #wrap {
+            width: 1300px;
+            height: 380px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hamburgerBox {
+            width: 400px;
+            height: 380px;
+            float: left;
+            margin-right: 50px;
+        }
+        .hamburgerBox:last-child{
+            margin-right: 0;
+        }
+        .hamburgerBoxImg {
+            background-color: #fff;
+            height: 180px;
+            position: relative;
+        }
+        .hamburgerBoxImg img {
+            position: absolute;
+            top: -100px;
+        }
+        .hamburgerBoxTxt {
+            color: #fff;
+            height: 200px;
+            padding: 20px;
+            background-color: orangered;
+            box-sizing: border-box;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .hamburgerBoxTxt h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="hamburgerBox">
+            <div class="hamburgerBoxImg">
+                <img src="images/hamburger.png" alt="hamburger">
+            </div>
+            <div class="hamburgerBoxTxt">
+               <h2>Hamburger</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis veritatis, consequatur deleniti provident asperiores. Quae nihil totam odit autem similique rem fugit consequuntur, asperiores harum voluptatum, natus earum quis, sint.</p>
+            </div>
+        </div>
+        <div class="hamburgerBox">
+            <div class="hamburgerBoxImg">
+                <img src="images/hamburger.png" alt="hamburger">
+            </div>
+            <div class="hamburgerBoxTxt">
+               <h2>Hamburger</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam natus rerum ea voluptates error, mollitia corporis ab doloribus optio voluptate, atque laudantium. Quod minima inventore explicabo repellendus nam sapiente illum?</p>
+            </div>
+        </div>
+        <div class="hamburgerBox">
+            <div class="hamburgerBoxImg">
+                <img src="images/hamburger.png" alt="hamburger">
+            </div>
+            <div class="hamburgerBoxTxt">
+               <h2>Hamburger</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, alias. Repellendus quisquam officiis, eaque culpa deleniti sint? Amet magni quibusdam nihil repellendus odit eos nemo, animi pariatur rerum voluptatibus itaque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

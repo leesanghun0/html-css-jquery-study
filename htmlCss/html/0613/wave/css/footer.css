@@ -1,0 +1,89 @@
+/*lobster webfont import*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    background-color: #333;
+}
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+.footerLogo {
+    color: #bbb;
+    float: left;
+    padding: 5px;
+}
+.footerLogo h3 {
+    font-size: 3rem;
+    margin-bottom: -12px;
+     font-family: 'Lobster';
+}
+.footerList {
+    float: right;
+    width: 600px;
+    padding-top: 15px;
+}
+.footerList>li {
+    float: left;
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+}
+.sub {
+    margin-top: 20px;
+}
+.sub li {
+    color: #bbb;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 30px;
+}
+#icon li {
+    float: left;
+    width: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+#icon li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/icon-sprite.png);
+}
+#icon li a.so1 {
+    background-position: left top;
+}#icon li a.so1:hover {
+    background-position: left bottom;
+}
+#icon li a.so2 {
+    background-position: center top;
+}#icon li a.so2:hover {
+    background-position: center bottom;
+}
+#icon li a.so3 {
+    background-position: right top;
+}
+#icon li a.so3:hover {
+    background-position: right bottom;
+}

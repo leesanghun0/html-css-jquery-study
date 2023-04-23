@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    background-color: #ddd;
+    font-family: arial;
+    color: #999;
+}
+
+/**/
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ninja_list .tt {
+    background-color: #fff;
+    position: relative;
+}
+
+.ninja_list .tt h2 {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    text-align: right;
+    color: #666;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.ninja_list .tt h2:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+.ninja_list .tt h2.open {
+    background-position: left bottom;
+    background-color: #fff;
+}
+
+.ninja_list .tt.blue h2.open {
+    color: #3da8fa;
+}
+
+.ninja_list .tt.purple h2.open {
+    color: #9951c3;
+}
+
+.ninja_list .tt.red h2.open {
+    color: #d64848;
+}
+
+.ninja_list .tt.orange h2.open {
+    color: #f1b72c;
+}
+
+.ninja_list .tt p {
+    text-align: right;
+    padding: 20px 20px 20px 350px;
+    line-height: 1.5rem;
+    font-size: 15px;
+    display: none;
+}
+
+.ninja_list .tt img {
+    position: absolute;
+    bottom: 0;
+    left: -110px;
+    display: none;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>subMenu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        #wrap {
+            width: 1200px;
+            height: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+        }
+        .header_logo {
+            width: 200px;
+            height: 100px;
+            background-color: bisque;
+            float: left;
+            line-height: 100px;
+        }
+        .main_menu {
+            width: 1000px;
+            height: 100px;
+            float: left;
+            background-color: cadetblue;
+        }
+        .main_menu_list {
+            width: 800px;
+            height: 70px;
+            background-color: dodgerblue;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .main_menu_list li {
+            width: 200px;
+            height: 70px;
+            float: left;
+            line-height: 70px;
+        }
+        .main_menu_list li a {
+            display: block;
+        }
+        .main_menu_list li a:hover {
+            background-color: deeppink;
+            color: #fff;
+        }
+        
+        .sub_menu {
+            width: 1200px;
+            height: 150px;
+            background-color: yellowgreen;
+            position: absolute;
+            top: 100px;
+            padding-left: 400px;
+            box-sizing: border-box;
+            display: none;
+        }
+        .sub_menu_list {
+            float: left;
+            color: #fff;
+        }
+        .sub_menu_list li a {
+            display: block;
+            width: 200px;
+            padding: 7px 0;
+        }
+        .sub_menu_list li a:hover {
+            background-color: green;
+        }
+        
+        .slider {
+            width: 100%;
+            height: 300px;
+            background-color: pink;
+            line-height: 300px;
+            color: #fff;
+        }
+    </style>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/slide_menu.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header_logo">
+                logo
+            </div>
+            <div class="main_menu">
+                <ul class="main_menu_list">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업영역</a></li>
+                    <li><a href="#">입주정보</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <div class="sub_menu">
+                <ul class="sub_menu_list">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">조직구성도</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+                <ul class="sub_menu_list">
+                    <li><a href="#">전원주택</a></li>
+                    <li><a href="#">도시재생</a></li>
+                    <li><a href="#">인테리어</a></li>
+                </ul>
+                <ul class="sub_menu_list">
+                    <li><a href="#">입주단지</a></li>
+                    <li><a href="#">입주캘린더</a></li>
+                </ul>
+                <ul class="sub_menu_list">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">건축상담</a></li>
+                    <li><a href="#">홍보자료실</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="slider">
+            이미지 슬라이드
+        </section>
+    </div>
+</body>
+</html>

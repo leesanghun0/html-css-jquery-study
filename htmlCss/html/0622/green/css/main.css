@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.logo {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    color: #3cb149;
+    font-size: 13px;
+    margin: 30px 0;
+    float: left;
+}
+.main_menu {
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+.main_menu_list {
+    width: 500px;
+    height: 50px;
+    background-color: #3cb149;
+    float: right;
+    margin-top: 50px;
+    color: #333;
+}
+.main_menu_list li {
+    float: left;
+    height: 50px;
+    width: 125px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main_menu_list li:hover {
+    background-color: #1d8844;
+    color: #fff;
+}
+.main_menu_list li a {
+    display: block;
+}
+.sub_menu {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    padding-left: 700px;
+    background-color: #1d8844;
+    display: none;
+}
+.sub_menu_list {
+    float: left;
+}
+.sub_menu_list li {
+    width: 125px;
+    height: 38px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;  
+} 
+.sub_menu_list li a {
+    display: block;
+    height: 100%;
+}
+.sub_menu_list li:hover {
+    background-color: #3cb149;
+    color: #fff;
+}
+
+/*slide*/
+.slide {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slide:after {
+    content: "GREEN복지재단";
+    position: absolute;
+    background-color: rgba(255,255,255,0.6);
+    padding: 25px;
+    border-radius: 15px;
+    color: #3cb149;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img_list {
+    width: 3600px; /*1200*3*/
+    height: 300px;
+    position: absolute;
+}
+.img_list li {
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+.img_list img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*contents*/
+.contents {
+    width: 100%;
+    height: 200px;
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+.col {
+    width: 33.3333%;
+    height: 200px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.col h2 {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #333;
+    margin-left: 15px;
+    border-bottom: #fff;
+    font-size: 18px;
+    position: relative;
+}
+.col h2:after {
+    content: "";
+    position: absolute;
+    width: 96px;
+    border: 2px solid #fff;
+    bottom: -3px;
+    left: 0;
+    z-index: 1;
+    
+}
+.contentsBox {
+    border-top: 1px solid #333;
+    height: 149px;
+    width: 98%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.notice {
+    position: relative;
+    line-height: 1.8;
+    font-size: 14px;
+}
+.notice li {
+    cursor: pointer;
+}
+.notice span {
+    position: absolute;
+    right: 10px;
+}
+.gallery {
+    padding: 20px 0 20px 10px;
+}
+.gallery li {
+    float: left;
+    width: 116px;
+    margin-right: 11px;
+}
+.gallery li:last-child {
+    margin-right: 0;
+}
+.banner{
+    margin: 10px 8px ;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 100px;
+}
+.f_col {
+    width: 33.3333%;
+    height: 100px;
+    float: left;
+}
+.f_col .logo{
+    font-weight: bold;
+    font-size: 26px;
+    color: #333;
+}
+.copy {
+    text-align: center;
+    line-height: 100px;
+    font-size: 14px;
+}
+form {
+    text-align: right;
+    line-height: 100px;
+}
+select {
+    height: 21px;
+}
+input[type=button] {
+    height: 21px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}

@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+/*    header    */
+.row {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.headerWrap {
+    width: 100%;
+    background-color: gray;
+}
+
+.header {
+    height: 150px;
+    background-color: gray;
+    position: relative;
+}
+
+.logoBox {
+    width: 240px;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+.point {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menuWrap {
+    width: 100%;
+    height: 40px;
+    background-color: #444;
+    position: absolute;
+    bottom: 0;
+}
+
+.menuList li {
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #aaa;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.menuList li:hover {
+    background-color: #aaa;
+    color: #444;
+}
+
+.menuList li:first-child {
+    background-color: #101010;
+    color: #aaa;
+}
+
+.menuList li:first-child:hover {
+    background-color: #aaa;
+    color: #101010;
+}
+
+.menuList li a {
+    display: block;
+    height: 100%;
+}
+
+/*    main    */
+.mainWrap {
+    background-color: #222;
+}
+
+.main {
+    height: 800px;
+    background-color: #222;
+}
+
+.contents {
+    width: 1000px;
+    height: 380px;
+    color: #aaa;
+}
+
+.contents li {
+    width: 192px;
+    height: 380px;
+    float: left;
+    margin-right: 10px;
+    background-color: #000;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+.contents li:last-child {
+    margin-right: 0;
+}
+
+.contents li img {
+    width: 100%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+.contents {
+    padding-top: 10px;
+}
+
+.contents h2 {
+    margin: 10px;
+}
+
+.contents p {
+    font-size: 14px;
+    padding: 0 10px 10px;
+    line-height: 1.4;
+}
+
+/*     footer    */
+.footerWrap {
+    background-color: #333;
+}
+
+.footer {
+    height: 120px;
+    background-color: #333;
+}
+
+.fLogoBox {
+    width: 240px;
+    margin: 35px 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.fLogoBox img {
+    height: 100%;
+}
+
+.fnb {
+    float: right;
+}
+
+.fnb .sub {
+    float: left;
+    width: 140px;
+    margin-top: 20px;
+}
+
+.fnb .sub h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fnb .sub li {
+    color: #aaa;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.fnb ul li:hover {
+    color: #fff;
+}
+
+.fnb .icons li {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-image: url(images/humans.jpeg);
+    background-repeat: no-repeat;
+    background-size: 120px 60px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    margin-right: 5px;
+}
+
+.fnb .icons li:last-child {
+    margin-right: 0;
+}
+
+.fnb .icons li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.fnb .icons .icon01 {
+    background-position: top left;
+}
+
+.fnb .icons .icon01:hover {
+    background-position: bottom left;
+}
+
+.fnb .icons .icon02 {
+    background-position: top right;
+}
+
+.fnb .icons .icon02:hover {
+    background-position: bottom right;
+}
+
+.fnb .icons .icon03 {
+    background-position: -60px 0;
+}
+
+.fnb .icons .icon03:hover {
+    background-position: -60px -30px;
+}
+
+.fnb .icons .icon04 {
+    background-position: -30px 0;
+}
+
+.fnb .icons .icon04:hover {
+    background-position: -30px -30px;
+}
